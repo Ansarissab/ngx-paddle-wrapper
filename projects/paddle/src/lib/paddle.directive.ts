@@ -22,6 +22,11 @@ export class PaddleDirective {
   @Input() email?: string;
   @Input() method: 'inline' | 'overlay' = 'overlay';
 
+  // Should be define if use 'inline' checkout
+  @Input() frameTarget?: string;
+  @Input() frameStyle?: string;
+  @Input() frameInitialHeight?: number;
+
   constructor(private paddleServ: PaddleService) {}
 
   async ngOnInit() {
@@ -42,6 +47,9 @@ export class PaddleDirective {
       message: this.message,
       coupon: this.coupon,
       email: this.email,
+      frameTarget: this.frameTarget,
+      frameStyle: this.frameStyle,
+      frameInitialHeight: this.frameInitialHeight,
     });
   }
 }

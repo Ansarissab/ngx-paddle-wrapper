@@ -35,6 +35,9 @@ export interface PaddleCheckoutOptions {
   upsellPassthrough?: string;
   override?: string;
   displayModeTheme?: 'light' | 'dark';
+  frameTarget?: string;
+  frameStyle?: string;
+  frameInitialHeight?: number;
 }
 
 export interface PaddlePrice {
