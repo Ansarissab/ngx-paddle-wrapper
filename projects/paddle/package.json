@@ -1,5 +1,5 @@
 {
-  "name": "@saschwarz/ngx-paddle-wrapper",
+  "name": "@ansarissab/ngx-paddle-wrapper",
   "version": "1.1.0",
   "peerDependencies": {
     "@angular/compiler": "^15.0.4",
@@ -11,7 +11,7 @@
   "description": "This is an Angular wrapper library for Paddle.js.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saschwarz/ngx-paddle-wrapper.git"
+    "url": "git+https://github.com/ansarissab/ngx-paddle-wrapper.git"
   },
   "keywords": [
     "angular",
@@ -22,8 +22,8 @@
   "author": "Steve Schwarz",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/saschwarz/ngx-paddle-wrapper/issues"
+    "url": "https://github.com/ansarissab/ngx-paddle-wrapper/issues"
   },
-  "homepage": "https://github.com/saschwarz/ngx-paddle-wrapper#readme",
+  "homepage": "https://github.com/ansarissab/ngx-paddle-wrapper#readme",
   "main": "src/public-api.ts"
 }
