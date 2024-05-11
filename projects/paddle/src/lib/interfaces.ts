@@ -5,7 +5,10 @@ export interface PaddleConfig {
   vendor: number;
   eventCallback?: Function;
 }
+
+export type PaddleCheckoutMethod = 'overlay' | 'inline';
 export interface PaddleCheckoutOptions {
+  method?: PaddleCheckoutMethod;
   product?: number;
   title?: string;
   message?: string;

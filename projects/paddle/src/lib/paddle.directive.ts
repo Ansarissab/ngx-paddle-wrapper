@@ -12,15 +12,15 @@ import { PaddleService } from './paddle.service';
   selector: '[ngxPaddle]',
 })
 export class PaddleDirective {
-  @Output() onCheckoutEvent: EventEmitter<
-    PaddleEventCallbackData
-  > = new EventEmitter();
+  @Output() onCheckoutEvent: EventEmitter<PaddleEventCallbackData> =
+    new EventEmitter();
   @Input() vendor: number;
   @Input() product: number;
   @Input() title?: string;
   @Input() message?: string;
   @Input() coupon?: string;
   @Input() email?: string;
+  @Input() method: 'inline' | 'overlay' = 'overlay';
 
   constructor(private paddleServ: PaddleService) {}
 
@@ -36,6 +36,7 @@ export class PaddleDirective {
   @HostListener('click', ['$event'])
   onClick($event) {
     this.paddleServ.open({
+      method: this.method,
       product: this.product,
       title: this.title,
       message: this.message,
